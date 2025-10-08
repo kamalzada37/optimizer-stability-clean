@@ -93,12 +93,6 @@ plot_noise0.png	Final test accuracy at 0% noise
 learning_curve_noise0.png	Training/test accuracy vs epochs at 0% noise
 learning_curve_noise10.png	Same for 10% noise
 
- Where to use in your research paper:
-
-Place plot_noise0.png in your Results section (comparing optimizer stability)
-
-Place learning_curve_noise0.png and learning_curve_noise10.png in your Discussion or Analysis section (illustrating convergence and noise impact)
-
  Project Structure
 
 optimizer-stability/
@@ -142,13 +136,25 @@ python -m src.train --optimizer sgd --lr 0.01 --noise 0.1 --precision float32 --
 4. Analyze results
 
 python -m src.analyze --indir results/light
- Citation
+
+# Citation
 If you use this code or results, please cite our work:
 
-Kamal Zada, M. & Parsa,Z , (2025). "Numerical Optimization in Machine Learning: Stability and Robustness of Optimizers Under Noise and Precision Constraints."
+Kamal Zada, M. & ParsaKarimi, Z. , (2025). "Numerical Optimization in Machine Learning: Stability and Robustness of Optimizers Under Noise and Precision Constraints."
 
 🧰 License
 This project is released under the MIT License — feel free to use, modify, and build upon it for academic or research purposes.
+
+## 📚 Citation (BibTeX)
+If you use this repository or build upon this research, please cite it as:
+
+@misc{Parsa & Kamal Zada2025optimizerstability,
+  title  = {Numerical Optimization in Machine Learning: Stability and Robustness of Optimizers Under Noise and Precision Constraints},
+  authors = {Mustafa Kamal Zada & Ziaulhaq ParsaKarimi},
+  year   = {2025},
+  howpublished = {\url{https://github.com/kamalzada37/optimizer-stability-clean}},
+  note   = {Version 1.0, GitHub repository}
+}
 
 🤝 Acknowledgments
 PyTorch for deep learning framework
@@ -159,12 +165,3 @@ MNIST Dataset by Yann LeCun et al.
 
 Research supervision and academic support from the contributing authors
 
-
-
-✅ **Instructions for you:**
-1. Copy this entire text and replace the content of your current `README.md` file.  
-2. Commit and push again:
-  
-   git add README.md
-   git commit -m "Update professional README with project description"
-   git push
